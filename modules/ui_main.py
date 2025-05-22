@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainuGoLGp.ui'
+## Form generated from reading UI file 'mainvmTGOk.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.2
 ##
@@ -28,8 +28,8 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1280, 720)
-        MainWindow.setMinimumSize(QSize(940, 560))
+        MainWindow.resize(1280, 721)
+        MainWindow.setMinimumSize(QSize(1280, 720))
         self.styleSheet = QWidget(MainWindow)
         self.styleSheet.setObjectName(u"styleSheet")
         font = QFont()
@@ -1135,6 +1135,7 @@ class Ui_MainWindow(object):
         self.adduser_button_create = QPushButton(self.adduser_page)
         self.adduser_button_create.setObjectName(u"adduser_button_create")
         self.adduser_button_create.setGeometry(QRect(930, 80, 171, 31))
+        self.adduser_button_create.setStyleSheet(u"background-color: rgb(33, 37, 43);")
         self.adduser_login = QLineEdit(self.adduser_page)
         self.adduser_login.setObjectName(u"adduser_login")
         self.adduser_login.setGeometry(QRect(730, 40, 181, 31))
@@ -1145,6 +1146,7 @@ class Ui_MainWindow(object):
         self.adduser_select_role.addItem("")
         self.adduser_select_role.setObjectName(u"adduser_select_role")
         self.adduser_select_role.setGeometry(QRect(930, 40, 171, 31))
+        self.adduser_select_role.setStyleSheet(u"background-color: rgb(33, 37, 43);")
         self.adduser_select_role.setPlaceholderText(u"")
         self.adduser_password = QLineEdit(self.adduser_page)
         self.adduser_password.setObjectName(u"adduser_password")
@@ -1154,6 +1156,7 @@ class Ui_MainWindow(object):
         self.adduser_button_delete = QPushButton(self.adduser_page)
         self.adduser_button_delete.setObjectName(u"adduser_button_delete")
         self.adduser_button_delete.setGeometry(QRect(440, 320, 171, 31))
+        self.adduser_button_delete.setStyleSheet(u"background-color: rgb(33, 37, 43);")
         self.login = QLabel(self.adduser_page)
         self.login.setObjectName(u"login")
         self.login.setGeometry(QRect(650, 50, 71, 16))
@@ -1414,7 +1417,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 218, 218))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 351, 218))
         self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
 "	border: none;\n"
 "    background: rgb(52, 59, 72);\n"
@@ -1739,7 +1742,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1747,12 +1750,12 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.titleLeftApp.setText(QCoreApplication.translate("MainWindow", u"PyDracula", None))
+        self.titleLeftApp.setText(QCoreApplication.translate("MainWindow", u"Invent APP", None))
         self.titleLeftDescription.setText(QCoreApplication.translate("MainWindow", u"Modern GUI / Flat Style", None))
         self.toggleButton.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
-        self.btn_home.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u043c", None))
-        self.btn_logs.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u043c", None))
-        self.btn_add_user.setText(QCoreApplication.translate("MainWindow", u"\u0422\u0435\u0441\u0442", None))
+        self.btn_home.setText(QCoreApplication.translate("MainWindow", u"\u0413\u043b\u0430\u0432\u043d\u0430\u044f", None))
+        self.btn_logs.setText(QCoreApplication.translate("MainWindow", u"\u0416\u0443\u0440\u043d\u0430\u043b \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0439", None))
+        self.btn_add_user.setText(QCoreApplication.translate("MainWindow", u"\u0423\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f\u043c\u0438", None))
         self.extraLabel.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
 #if QT_CONFIG(tooltip)
         self.extraCloseColumnBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Close left box", None))

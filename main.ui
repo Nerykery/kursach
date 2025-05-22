@@ -8,13 +8,13 @@
     <x>0</x>
     <y>0</y>
     <width>1280</width>
-    <height>720</height>
+    <height>721</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>940</width>
-    <height>560</height>
+    <width>1280</width>
+    <height>720</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -688,7 +688,7 @@ background-repeat: no-repeat;</string>
               </font>
              </property>
              <property name="text">
-              <string>PyDracula</string>
+              <string>Invent APP</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
@@ -875,7 +875,7 @@ background-repeat: no-repeat;</string>
                    <string notr="true">background-image: url(:/icons/images/icons/cil-home.png);</string>
                   </property>
                   <property name="text">
-                   <string>Дом</string>
+                   <string>Главная</string>
                   </property>
                  </widget>
                 </item>
@@ -911,7 +911,7 @@ background-repeat: no-repeat;</string>
                    <string notr="true">background-image: url(:/icons/images/icons/cil-description.png);</string>
                   </property>
                   <property name="text">
-                   <string>Дом</string>
+                   <string>Журнал действий</string>
                   </property>
                  </widget>
                 </item>
@@ -947,7 +947,7 @@ background-repeat: no-repeat;</string>
                    <string notr="true">background-image: url(:/icons/images/icons/cil-user.png);</string>
                   </property>
                   <property name="text">
-                   <string>Тест</string>
+                   <string>Управление пользователями</string>
                   </property>
                  </widget>
                 </item>
@@ -1760,7 +1760,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>1</number>
+                      <number>0</number>
                      </property>
                      <widget class="QWidget" name="adduser_page">
                       <widget class="QTableWidget" name="adduser_user_table">
@@ -2166,6 +2166,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
                          <height>31</height>
                         </rect>
                        </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(33, 37, 43);</string>
+                       </property>
                        <property name="text">
                         <string>Создать</string>
                        </property>
@@ -2203,6 +2206,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
                          <width>171</width>
                          <height>31</height>
                         </rect>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(33, 37, 43);</string>
                        </property>
                        <property name="placeholderText">
                         <string notr="true" comment="123" extracomment="123"/>
@@ -2251,6 +2257,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
                          <width>171</width>
                          <height>31</height>
                         </rect>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(33, 37, 43);</string>
                        </property>
                        <property name="text">
                         <string>Удалить</string>
@@ -2991,7 +3000,7 @@ background-repeat: no-repeat;</string>
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>218</width>
+                                 <width>351</width>
                                  <height>218</height>
                                 </rect>
                                </property>
