@@ -236,8 +236,8 @@ class MainWindow(QMainWindow):
             QTableView {
                 background-color: rgb(33, 37, 43);
                 alternate-background-color: rgb(33, 37, 43);
-                gridline-color: 
-                border: 1px solid 
+                gridline-color: #dee2e6;
+                border: 1px solid #ced4da;
                 border-radius: 5px;
             }
             QHeaderView::section {
@@ -785,7 +785,6 @@ class MainWindow(QMainWindow):
                 self.logger.log_action(
                     action="Создание пользователя",
                     target=login,
-                    additional_data=f"Роль: {role}"
                     )
                 QMessageBox.information(self, "Успех", "Пользователь успешно создан!")
                 
@@ -838,7 +837,6 @@ class MainWindow(QMainWindow):
                     self.logger.log_action(
                         action="Удаление",
                         target=login,
-                        additional_data=f"Инициатор: {self.user_data.get('login')}"
                     )
                     QMessageBox.information(self, "Успех", f"Пользователь {login} успешно удален!")
                     
