@@ -2293,9 +2293,28 @@ background-repeat: no-repeat;</string>
                         <rect>
                          <x>10</x>
                          <y>60</y>
-                         <width>911</width>
+                         <width>1001</width>
                          <height>361</height>
                         </rect>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">            QTableWidget {
+                background-color: #f8f9fa;
+                alternate-background-color: #e9ecef;
+                gridline-color: #dee2e6;
+                border: 1px solid #ced4da;
+                border-radius: 5px;
+            }
+            QHeaderView::section {
+                background-color: #343a40;
+                color: white;
+                padding: 5px;
+                border: 1px solid #495057;
+                font-weight: bold;
+            }
+            QTableWidget::item {
+                padding: 5px;
+            }</string>
                        </property>
                       </widget>
                       <widget class="QPushButton" name="invent_search_button">
@@ -2307,188 +2326,12 @@ background-repeat: no-repeat;</string>
                          <height>31</height>
                         </rect>
                        </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(33, 37, 43);</string>
+                       </property>
                        <property name="text">
                         <string>Поиск</string>
                        </property>
-                      </widget>
-                      <widget class="QComboBox" name="invent_fillte_type">
-                       <property name="geometry">
-                        <rect>
-                         <x>940</x>
-                         <y>50</y>
-                         <width>171</width>
-                         <height>31</height>
-                        </rect>
-                       </property>
-                       <property name="placeholderText">
-                        <string notr="true" comment="123" extracomment="123"/>
-                       </property>
-                       <item>
-                        <property name="text">
-                         <string>Фильтр по типу</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Системные блоки</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Мониторы</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Мышки</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Клавиатуры</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Микрофоны</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Веб-камеры</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Принтеры</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Сканеры</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>МФУ</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Проекторы</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Чайники</string>
-                        </property>
-                       </item>
-                      </widget>
-                      <widget class="QComboBox" name="invent_create_type">
-                       <property name="geometry">
-                        <rect>
-                         <x>0</x>
-                         <y>480</y>
-                         <width>181</width>
-                         <height>31</height>
-                        </rect>
-                       </property>
-                       <property name="placeholderText">
-                        <string notr="true" comment="123" extracomment="123"/>
-                       </property>
-                       <item>
-                        <property name="text">
-                         <string>Выберите тип</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Системные блоки</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Мониторы</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Мышки</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Клавиатуры</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Микрофоны</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Веб-камеры</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Принтеры</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Сканеры</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>МФУ</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Проекторы</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Чайники</string>
-                        </property>
-                       </item>
-                      </widget>
-                      <widget class="QComboBox" name="invent_create_sost">
-                       <property name="geometry">
-                        <rect>
-                         <x>200</x>
-                         <y>480</y>
-                         <width>111</width>
-                         <height>31</height>
-                        </rect>
-                       </property>
-                       <property name="placeholderText">
-                        <string notr="true" comment="123" extracomment="123"/>
-                       </property>
-                       <item>
-                        <property name="text">
-                         <string>Состояние</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Новый</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Сломан</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Работает</string>
-                        </property>
-                       </item>
                       </widget>
                       <widget class="QComboBox" name="invent_create_curator">
                        <property name="geometry">
@@ -2498,6 +2341,9 @@ background-repeat: no-repeat;</string>
                          <width>311</width>
                          <height>31</height>
                         </rect>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(33, 37, 43);</string>
                        </property>
                        <property name="placeholderText">
                         <string notr="true" comment="123" extracomment="123"/>
@@ -2527,8 +2373,17 @@ background-repeat: no-repeat;</string>
                          <height>31</height>
                         </rect>
                        </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(33, 37, 43);</string>
+                       </property>
+                       <property name="editable">
+                        <bool>true</bool>
+                       </property>
                        <property name="placeholderText">
                         <string notr="true" comment="123" extracomment="123"/>
+                       </property>
+                       <property name="duplicatesEnabled">
+                        <bool>false</bool>
                        </property>
                        <item>
                         <property name="text">
@@ -2555,6 +2410,9 @@ background-repeat: no-repeat;</string>
                          <height>31</height>
                         </rect>
                        </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(33, 37, 43);</string>
+                       </property>
                        <property name="text">
                         <string>Добавить</string>
                        </property>
@@ -2562,11 +2420,14 @@ background-repeat: no-repeat;</string>
                       <widget class="QPushButton" name="invent_delete_button">
                        <property name="geometry">
                         <rect>
-                         <x>830</x>
+                         <x>910</x>
                          <y>430</y>
                          <width>91</width>
                          <height>31</height>
                         </rect>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(33, 37, 43);</string>
                        </property>
                        <property name="text">
                         <string>Удалить</string>
@@ -2619,10 +2480,10 @@ background-repeat: no-repeat;</string>
                         <string/>
                        </property>
                        <property name="placeholderText">
-                        <string/>
+                        <string>поиск по базе</string>
                        </property>
                       </widget>
-                      <widget class="QLineEdit" name="invent_create_id_2">
+                      <widget class="QLineEdit" name="invent_create_name">
                        <property name="geometry">
                         <rect>
                          <x>230</x>
@@ -2646,6 +2507,193 @@ background-repeat: no-repeat;</string>
                        <property name="placeholderText">
                         <string>Название</string>
                        </property>
+                      </widget>
+                      <widget class="QComboBox" name="invent_fillte_type">
+                       <property name="geometry">
+                        <rect>
+                         <x>1020</x>
+                         <y>60</y>
+                         <width>151</width>
+                         <height>31</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Segoe UI</family>
+                         <pointsize>10</pointsize>
+                         <italic>false</italic>
+                         <bold>false</bold>
+                        </font>
+                       </property>
+                       <property name="autoFillBackground">
+                        <bool>false</bool>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(33, 37, 43);</string>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>16</width>
+                         <height>16</height>
+                        </size>
+                       </property>
+                       <property name="frame">
+                        <bool>true</bool>
+                       </property>
+                       <item>
+                        <property name="text">
+                         <string>Фильтр по типу</string>
+                        </property>
+                       </item>
+                      </widget>
+                      <widget class="QComboBox" name="invent_create_sost">
+                       <property name="geometry">
+                        <rect>
+                         <x>200</x>
+                         <y>480</y>
+                         <width>111</width>
+                         <height>31</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Segoe UI</family>
+                         <pointsize>10</pointsize>
+                         <italic>false</italic>
+                         <bold>false</bold>
+                        </font>
+                       </property>
+                       <property name="autoFillBackground">
+                        <bool>false</bool>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(33, 37, 43);</string>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>16</width>
+                         <height>16</height>
+                        </size>
+                       </property>
+                       <property name="frame">
+                        <bool>true</bool>
+                       </property>
+                       <item>
+                        <property name="text">
+                         <string>Состояние</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>На складе</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Сломан</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Работает</string>
+                        </property>
+                       </item>
+                      </widget>
+                      <widget class="QComboBox" name="invent_create_type">
+                       <property name="geometry">
+                        <rect>
+                         <x>0</x>
+                         <y>480</y>
+                         <width>191</width>
+                         <height>31</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Segoe UI</family>
+                         <pointsize>10</pointsize>
+                         <italic>false</italic>
+                         <bold>false</bold>
+                        </font>
+                       </property>
+                       <property name="autoFillBackground">
+                        <bool>false</bool>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(33, 37, 43);</string>
+                       </property>
+                       <property name="editable">
+                        <bool>true</bool>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>16</width>
+                         <height>16</height>
+                        </size>
+                       </property>
+                       <property name="frame">
+                        <bool>true</bool>
+                       </property>
+                       <item>
+                        <property name="text">
+                         <string>Тип</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Системные блоки</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Мониторы</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Мышки</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Клавиатуры</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Микрофоны</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Веб-камеры</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Принтеры</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Сканеры</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>МФУ</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Проекторы</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Чайники</string>
+                        </property>
+                       </item>
                       </widget>
                      </widget>
                      <widget class="QWidget" name="widgets">
@@ -2943,7 +2991,7 @@ background-repeat: no-repeat;</string>
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>351</width>
+                                 <width>218</width>
                                  <height>218</height>
                                 </rect>
                                </property>
