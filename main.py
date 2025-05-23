@@ -6,7 +6,9 @@ from PySide6.QtWidgets import QTableWidgetItem, QHeaderView, QApplication, QMain
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QColor, QFont, QIcon
 from datetime import datetime
-site = "127.0.0.1"
+# site = "127.0.0.1"
+with open('site.txt', 'r') as f:
+    site = f.read().strip()
 
 
 
